@@ -63,7 +63,7 @@ PDGaM/
 │   └── Gait/
 │       ├── train.csv
 │       └── test.csv
-└── HumanML3Drep_30fps_score3adjusted/
+└── representation_HML3D/
     ├── new_joint_vecs/
     │   ├── <sequence_id>.npy
     │   └── <sequence_id>_M.npy
@@ -99,7 +99,7 @@ All commands below assume the PDGaM configuration files have been updated and th
 
 ```bash
 python train_vq.py \
-  --name PretrainM-e200lrf0.1_HealthyzerooutADD_GEOl1_d64_128_m64_512_conc_DCrvq_2clsMGRL0.01_VQlr2e-6cls2e-7 \
+  --name gaitgen_vq_tokenizer \
   --gpu_id 0 \
   --dataset_name '["pdgam"]'
 ```
@@ -109,7 +109,7 @@ The tokenizer defaults correspond to the disentangled conditional RVQ-VAE traini
 This command writes the tokenizer checkpoint to:
 
 ```text
-checkpoints/pdgam/PretrainM-e200lrf0.1_HealthyzerooutADD_GEOl1_d64_128_m64_512_conc_DCrvq_2clsMGRL0.01_VQlr2e-6cls2e-7/
+checkpoints/pdgam/gaitgen_vq_tokenizer/
 ```
 
 ### 2. Train The Masked Transformer
@@ -118,11 +118,11 @@ Set `--vq_name` to the trained disentangled RVQ-VAE experiment name.
 
 ```bash
 python train_t2m_transformer.py \
-  --name mtrans_pdgam \
+  --name gaitgen_mask_transformer \
   --gpu_id 0 \
   --dataset_name '["pdgam"]' \
   --batch_size 64 \
-  --vq_name PretrainM-e200lrf0.1_HealthyzerooutADD_GEOl1_d64_128_m64_512_conc_DCrvq_2clsMGRL0.01_VQlr2e-6cls2e-7 \
+  --vq_name gaitgen_vq_tokenizer \
   --latent_dim 128 \
   --n_heads 6 \
   --disentangled
@@ -132,11 +132,11 @@ python train_t2m_transformer.py \
 
 ```bash
 python train_res_transformer.py \
-  --name rtrans_pdgam \
+  --name gaitgen_residual_transformer \
   --gpu_id 0 \
   --dataset_name '["pdgam"]' \
   --batch_size 64 \
-  --vq_name PretrainM-e200lrf0.1_HealthyzerooutADD_GEOl1_d64_128_m64_512_conc_DCrvq_2clsMGRL0.01_VQlr2e-6cls2e-7 \
+  --vq_name gaitgen_vq_tokenizer \
   --cond_drop_prob 0.2 \
   --share_weight \
   --disentangled

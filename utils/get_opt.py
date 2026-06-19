@@ -67,7 +67,7 @@ def get_opt(opt_path, device, **kwargs):
     if 'pdgam' in dataset_names:
         unified_root = os.environ.get('UNIFIED_DB_ROOT', './data')
         opt.data_root = os.environ.get('PDGAM_ROOT', pjoin(unified_root, 'PDGaM'))
-        opt.motion_dir = pjoin(opt.data_root, 'HumanML3Drep_30fps_score3adjusted', 'new_joint_vecs')
+        opt.motion_dir = pjoin(opt.data_root, 'representation_HML3D', 'new_joint_vecs')
         opt.text_dir = ''
         opt.joints_num = 22
         opt.dim_pose = 263

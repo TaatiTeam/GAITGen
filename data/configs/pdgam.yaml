@@ -1,7 +1,7 @@
 root_dir: './data/Unified_Motion_DB/PDGaM/'
 annot_dir: './data/Unified_Motion_DB/PDGaM/Annotations/Gait/'
-motion_dir: './data/Unified_Motion_DB/PDGaM/HumanML3Drep_30fps_score3adjusted/'
-split_file_dir: './data/Unified_Motion_DB/PDGaM/HumanML3Drep_30fps_score3adjusted/'
+motion_dir: './data/Unified_Motion_DB/PDGaM/representation_HML3D/'
+split_file_dir: './data/Unified_Motion_DB/PDGaM/representation_HML3D/'
 # UNCOMMENT BELOW FOR MIX_MATCH_DB and COMMENT ABOVE
 # motion_dir: './data/Unified_Motion_DB/PDGaM/Mix_Match_DB/'
 # split_file_dir: './data/Unified_Motion_DB/PDGaM/Mix_Match_DB/'
