@@ -5,8 +5,10 @@
 <strong>(WACV 2026)
 </h3>
 
-[![arXiv](https://img.shields.io/badge/arXiv-2503.22397-b31b1b.svg)](https://arxiv.org/abs/2503.22397)
-[![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://vadeli.github.io/GAITGen/)
+<p align="center">
+  <a href="https://arxiv.org/abs/2503.22397"><img src="https://img.shields.io/badge/arXiv-2503.22397-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://vadeli.github.io/GAITGen/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page"></a>
+</p>
 
 PyTorch implementation for training gait motion generation models with residual vector quantization and transformer-based motion priors.
 
