@@ -1,0 +1,13 @@
+root_dir: './data/Unified_Motion_DB/PDGaM/'
+annot_dir: './data/Unified_Motion_DB/PDGaM/Annotations/Gait/'
+motion_dir: './data/Unified_Motion_DB/PDGaM/HumanML3Drep_30fps_score3adjusted/'
+split_file_dir: './data/Unified_Motion_DB/PDGaM/HumanML3Drep_30fps_score3adjusted/'
+# UNCOMMENT BELOW FOR MIX_MATCH_DB and COMMENT ABOVE
+# motion_dir: './data/Unified_Motion_DB/PDGaM/Mix_Match_DB/'
+# split_file_dir: './data/Unified_Motion_DB/PDGaM/Mix_Match_DB/'
+joints_num: 22
+dim_pose: 263
+fps: 30
+kinematic_chain: paramUtil.t2m_kinematic_chain
+dataset_opt_path: './checkpoints/pdgam/Comp_v6_KLD005/opt.txt'
+num_classes: 4

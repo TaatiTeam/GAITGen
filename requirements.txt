@@ -1,0 +1,23 @@
+clip @ git+https://github.com/openai/CLIP.git
+colorama
+einops
+ftfy
+gdown
+imageio
+imageio-ffmpeg
+matplotlib
+numpy
+pandas
+Pillow
+PyYAML
+schedulefree
+scikit-learn
+scipy
+seaborn
+tabulate
+tensorboard
+torch
+torchmetrics
+torchvision
+tqdm
+wandb

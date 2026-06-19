@@ -1,0 +1,17 @@
+name: gaitgen
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - scikit-learn
+  - pandas
+  - matplotlib
+  - pillow
+  - tqdm
+  - pip:
+      - -r requirements.txt
