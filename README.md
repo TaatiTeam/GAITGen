@@ -17,7 +17,7 @@ GAITGen represents gait sequences as discrete motion tokens with an RVQ-VAE toke
 
 - [ ] Release dataset pre-processed representations
 - [ ] Release pretrained checkpoints
-- [x] 🔥 Released training code
+- [x] Released code 🔥
 - [x] Accepted to WACV 2026
 - [x] Proposed GAITGen, a disentangled motion-pathology generative framework for impaired gait motion generation in the clinical domain
 
