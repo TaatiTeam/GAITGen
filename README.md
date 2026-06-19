@@ -10,12 +10,20 @@
   <a href="https://vadeli.github.io/GAITGen/"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page"></a>
 </p>
 
-PyTorch implementation for training gait motion generation models with residual vector quantization and transformer-based motion priors.
 
 GAITGen represents gait sequences as discrete motion tokens with an RVQ-VAE tokenizer, then learns transformer models over those tokens for conditional gait motion modeling. The code supports standard and disentangled VQ-VAE variants, masked transformer training, and residual transformer training.
 
+## 🎉 News
+
+- [ ] Release dataset pre-processed representations
+- [ ] Release pretrained checkpoints
+- [x] 🔥 Released training code
+- [x] Accepted to WACV 2026
+- [x] Proposed GAITGen, a disentangled motion-pathology generative framework for impaired gait motion generation in the clinical domain
+
 ## Contents
 
+- [News](#-news)
 - [Installation](#installation)
 - [Data Preparation](#data-preparation)
 - [Evaluator Assets](#evaluator-assets)
