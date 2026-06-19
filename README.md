@@ -1,8 +1,9 @@
-<h1 align="center">AITGen: Disentangled Motion-Pathology Impaired Gait Generative Model
-<br>
-<br> ✨ Bringing Motion Generation to the Clinical Domain ✨
+# GAITGen: Disentangled Motion-Pathology Impaired Gait Generative Model
+
+
+<h3 align="center"> ✨ Bringing Motion Generation to the Clinical Domain ✨
 <strong>(WACV 2026)
-</h1>
+</h3>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.22397-b31b1b.svg)](https://arxiv.org/abs/2503.22397)
 [![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://vadeli.github.io/GAITGen/)
